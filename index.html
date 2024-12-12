@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio ni Raiko</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Raiko's Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <section id="hero">
+        <div class="profile-picture" class="box slide">
+            <img src="Images/raiko.jpg" alt="Raiko's Picture">
+        </div>
+        <h1>Hi, I'm Raiko Rainer Jones R. Estrada</h1>
+        <p>Aspiring Developer | Cybersecurity Enthusiast | Future Innovator</p>
+        <a href="#contact" class="cta-button">Get in Touch</a>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p class="justify">Hello! I'm <strong>Raiko Rainer Jones R. Estrada</strong>, an <strong>IT student</strong> with a relentless drive for innovation and creativity. My journey is centered around creating dynamic <strong>web applications</strong>, engaging <strong>interactive games</strong>, and diving deep into the world of <strong>cybersecurity</strong>. Technology isn't just my field—it's my passion and my playground for turning ideas into impactful solutions. Beyond coding, I love challenging myself to learn new technologies, embrace growth, and collaborate to make a difference. Let's create something amazing together!</p>
+        <p class="justify"><strong>Educational Background:</strong></p>
+        <ul style="list-style-type: none; padding: 0; text-align: justify;">
+            <li><strong>Elementary:</strong> Don Restituto Baol Central School</li>
+            <li><strong>High School:</strong> Panabo Christian School</li>
+            <li><strong>Senior High School:</strong> Gingoog Christian College</li>
+            <li><strong>Current:</strong> Bachelor of Science in Information Technology at Holy Cross of Davao College (HCDC)</li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="clickable-skill" data-percentage="50%">HTML
+                <div class="progress-bar"><span></span></div>
+                <div class="skill-percentage">50%</div>
+            </div>
+            <div class="clickable-skill" data-percentage="60%">CSS
+                <div class="progress-bar"><span></span></div>
+                <div class="skill-percentage">60%</div>
+            </div>
+            <div class="clickable-skill" data-percentage="38%">JavaScript
+                <div class="progress-bar"><span></span></div>
+                <div class="skill-percentage">38%</div>
+            </div>
+            <div class="clickable-skill" data-percentage="70%">C++
+                <div class="progress-bar"><span></span></div>
+                <div class="skill-percentage">70%</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card" onclick="window.open('https://reezi-bops.github.io/bmi-raiko/', '_blank')">
+                <h3>BMI Calculator</h3>
+                <p class="desjus">A sleek and user-friendly web application designed to calculate your Body Mass Index (BMI). With its interactive graphical user interface (GUI), it makes staying healthy and informed both easy and fun.</p>
+            </div>
+            <div class="project-card" onclick="window.open('https://raiko143.github.io/snakey-raiko/', '_blank')">
+                <h3>Snake Game</h3>
+                <p class="desjus">Experience the thrill of a classic Snake Game reimagined with stunning animations and challenging obstacles. Built with a focus on engaging gameplay and modern web technologies, this game promises endless entertainment.</p>
+            </div>
+            <div class="project-card" onclick="window.open('https://reezi-bops.github.io/Basic-Calculator/', '_blank')">
+                <h3>Basic Calculator</h3>
+                <p class="desjus">A simple calculator with light and dark themes, allowing easy switching between bright and low-light modes. It supports basic arithmetic operations like addition, subtraction, multiplication, and division, featuring a sleek, customizable interface for a comfortable user experience.<p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for collaborations or to say hi!</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/raiko.rebucas" target="_blank"><img src="images/Facebook.png" alt="Facebook" class="social-icon"></a>
+            <a href="https://www.instagram.com/rrj.aeiuo/" target="_blank"><img src="images/instagram.png" alt="Instagram" class="social-icon"></a>
+            <a href="mailto:raikorainerjones.estrada@hcdc.edu.ph"><img src="images/gmai.png" alt="Gmail" class="social-icon"></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Raiko Rainer Jones R. Estrada. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

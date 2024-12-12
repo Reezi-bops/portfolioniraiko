@@ -1,0 +1,244 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+header {
+    background: linear-gradient(to right, #1f1f1f, #333);
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #81C784;
+}
+
+#hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to bottom, #1f1f1f, #2c2c2c);
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #121212;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #81C784;
+    transform: translateY(-5px);
+}
+
+#about, #skills, #projects, #contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about {
+    position: relative;
+    background: linear-gradient(to bottom right, #333, #444);
+    color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    animation: pulseBorder 5s infinite;
+}
+
+@keyframes pulseBorder {
+    0% {
+        box-shadow: 0 0 10px #4CAF50;
+    }
+    50% {
+        box-shadow: 0 0 20px #81C784;
+    }
+    100% {
+        box-shadow: 0 0 10px #4CAF50;
+    }
+}
+
+#about h2 {
+    color: #4CAF50;
+}
+
+.justify {
+    text-align: justify;
+    padding: 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    animation: fadeInBox 1.5s ease-in-out;
+}
+
+@keyframes fadeInBox {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pullUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #4CAF50;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.clickable-skill {
+    background: #333;
+    color: #4CAF50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.clickable-skill:hover {
+    background: #349237;
+    color: #121212;
+    transform: translateY(-5px);
+}
+
+.progress-bar {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #555;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.progress-bar span {
+    display: block;
+    height: 10px;
+    background-color: #45bb49;
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.skill-percentage {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #81C784;
+    display: none;
+    animation: pullUp 0.5s ease-out;
+}
+
+.desjus {
+    text-align: justify;
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeInBox 1.5s ease-in-out;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    background: #333;
+    color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    background: #1f1f1f;
+    text-align: center;
+    padding: 20px;
+    color: #4CAF50;
+}
+
+@media (max-width: 768px) {
+    .skills-container, .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
